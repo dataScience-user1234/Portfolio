@@ -1,5 +1,9 @@
 # 🌍 Projet EcoCampus : Mobilité au Quotidien
 
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>
+
 ## 📋 Présentation du Projet
 Ce projet a été réalisé dans le cadre d'un projet tutoré de première année en BUT Science des Données. Il s'inscrit dans la démarche EcoCampus et se concentre sur l'analyse de la mobilité au quotidien des usagers du campus d'Aurillac.
 
@@ -15,3 +19,7 @@ L'objectif principal est de comprendre comment les étudiants et le personnel se
 * `Rapport.pdf` : Le document de synthèse présentant le contexte, l'analyse et les propositions d'amélioration.
 * Fichier `.pbix` : Le tableau de bord interactif Power BI.
 * Fichier `.xlsx` : Les données brutes issues du questionnaire.
+
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>

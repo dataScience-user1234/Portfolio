@@ -1,5 +1,9 @@
 **Ma Collection Privée - MET Museum API**
 
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>
+
 Pour visiter la galerie : 
 (https://dataScience-user1234.github.io/Portfolio/Technologie_web/Projet_musee_API/)
 
@@ -17,3 +21,7 @@ Le projet est divisé en trois scripts Python distincts qui s'exécutent à la s
 1. **`1_musee.py`:** Interroge l'API pour récupérer la liste des départements du musée et cibler celui des "Peintures Européennes".
 2. **`2_europeanPaintings.py`:** Récupère une sélection d'œuvres, interroge l'API pour obtenir leurs détails précis (Titre, Artiste, URL de l'image), et sauvegarde ces données brutes dans le fichier `ma_data.json`.
 3. **`3_site.py`:** Lit le fichier JSON et génère automatiquement le fichier final `index.html` contenant le design et la structure de la galerie web.
+
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>
