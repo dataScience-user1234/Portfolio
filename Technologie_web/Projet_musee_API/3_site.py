@@ -1,6 +1,6 @@
 import json 
 
-# --- ETAPE 1 : LECTURE DES DONNÉES ---
+#lecture des données
 try:
     with open("ma_data.json", "r", encoding='utf-8') as f:
         liste_oeuvres = json.load(f)
@@ -8,7 +8,7 @@ except FileNotFoundError:
     print("Erreur : Lance d'abord 'recup.py' pour récupérer les données !")
     exit()
 
-# --- ETAPE 2 : CONSTRUCTION DU HTML ---
+#construction du html
 print(f"Création du site pour {len(liste_oeuvres)} oeuvres...")
 
 html_content = """
@@ -28,7 +28,7 @@ html_content = """
     </style>
 </head>
 <body>
-    <h1>🏛️ Ma Collection Privée</h1>
+    <h1>Ma Collection Privée</h1>
     <div class="galerie">
 """
 
@@ -48,8 +48,8 @@ html_content += """
 </html>
 """
 
-# --- ETAPE 3 : ECRITURE DU FICHIER FINAL ---
-with open("ma_galerie.html", "w", encoding='utf-8') as f:
+#écriture du fichier final
+with open("index.html", "w", encoding='utf-8') as f:
     f.write(html_content)
 
-print("🎉 Site généré ! Ouvre 'ma_galerie.html'.")
+print("Site généré !")
