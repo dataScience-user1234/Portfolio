@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="./titre_portfolio.png" alt="Portfolio" width="450">
-</div>
+# Portfolio
 
 > **Bienvenue sur mon portfolio ! 👋**
 
