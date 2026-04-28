@@ -1,15 +1,16 @@
-#Ma Collection Privée - MET Museum API
+**Ma Collection Privée - MET Museum API**
 
-[Cliquez ici pour visiter la galerie: ](https://dataScience-user1234.github.io/Portfolio/Technologie_web/Projet_musee_API/)
+Pour visiter la galerie : 
+(https://dataScience-user1234.github.io/Portfolio/Technologie_web/Projet_musee_API/)
 
-Ce projet est une application Python qui interagit avec l'API publique du **Metropolitan Museum of Art (MET)** de New York. L'objectif est d'extraire des données sur des peintures européennes et de générer automatiquement une galerie web (HTML/CSS) pour les exposer.
+Ce projet est une application Python qui interagit avec l'API publique du **Metropolitan Museum of Art (MET)** de New York. L'objectif est d'extraire des données sur des peintures européennes et de générer automatiquement une galerie web pour les exposer.
 
-## 🎯 Objectifs du projet
-* Comprendre et manipuler une **API REST** publique.
-* Traiter des données au format **JSON**.
+**Objectifs**
+* Comprendre et manipuler une API REST publique.
+* Traiter des données au format JSON.
 * Automatiser la création d'une page web dynamique avec Python.
 
-## ⚙️ Comment fonctionne le pipeline de données ?
+**Pipeline de données**
 
 Le projet est divisé en trois scripts Python distincts qui s'exécutent à la suite :
 
