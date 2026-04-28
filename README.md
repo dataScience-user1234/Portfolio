@@ -1,5 +1,5 @@
 
-Bienvenue sur mon portfolio ! <img src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" width="60" alt="Animation GIF" align="absmiddle">
+Bienvenue sur mon portfolio !
 
 <div align="center">
   <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
