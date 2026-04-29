@@ -18,6 +18,7 @@ L'objectif principal est de comprendre comment les étudiants et le personnel se
 * `Rapport.pdf` : Le document de synthèse présentant le contexte, l'analyse et les propositions d'amélioration.
 * Fichier `.pbix` : Le tableau de bord interactif Power BI.
 * Fichier `.xlsx` : Les données brutes issues du questionnaire.
+* Le dossier `dashboard` : Contient les screens du tableau de bord.
 
 <div align="center">
   <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
