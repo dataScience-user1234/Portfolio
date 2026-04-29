@@ -7,6 +7,7 @@
 Ce projet rassemble une série d'études de cas pratiques portant sur le numérique et l'application du RGPD pour la protection des données personnelles.
 
 **Contexte et Travail Effectué**
+
 Le document contient la résolution de plusieurs activités et mises en situation juridiques afin d'évaluer la conformité des entreprises face à la loi. 
 
 Le travail aborde les thématiques suivantes :
