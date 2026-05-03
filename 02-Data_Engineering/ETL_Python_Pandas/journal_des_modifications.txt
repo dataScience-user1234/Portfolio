@@ -1,0 +1,12 @@
+Les fichiers CSV ont été chargés dans des DataFrames.
+Les lignes avec des données manquantes dans 'Diagnosis' ou 'TreatmentCost' ont été supprimées.
+La colonne 'Diagnosis' a été uniformisée.
+Les colonnes de dates ont été transformées au format DD/MM/YYYY.
+Les valeurs manquantes ont été remplies dans 'Diagnosis' et 'TreatmentCost'.
+Une date par défaut a été appliquée pour 'LastVisit'.
+Les fichiers nettoyés ont été enregistrés.
+On a ajouté une colonne 'Age' dans les deux DataFrames.
+La colonne 'Statut' a été créée pour indiquer l'état de santé.
+On a fusionné les deux DataFrames grâce à 'PatientID'.
+Les colonnes en doublon ont été supprimées après la fusion.
+Les données fusionnées ont été enregistrées dans 'donnees_hopital_final.csv'.
