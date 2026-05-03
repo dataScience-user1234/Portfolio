@@ -1,6 +1,8 @@
-Bonjour,
+**Analyse et collecte des Monarques de France**
 
-Voici notre projet SAE sur les monarques de France.
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>
 
 Pour pouvoir tester le tableau de bord directement et sans conflit de versions, on a prévu un environnement virtuel. Voici les commandes à taper dans le terminal pour tout lancer chez vous :
 
@@ -19,4 +21,6 @@ Pour pouvoir tester le tableau de bord directement et sans conflit de versions, 
 
 À noter : le fichier "rois_france_final.csv" est déjà inclus dans le dossier, le dashboard s'affichera donc immédiatement. Si vous souhaitez tester notre script de collecte depuis zéro, vous pouvez lancer "python ROI.py" au préalable.
 
-Merci !
+<div align="center">
+  <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
+</div>
