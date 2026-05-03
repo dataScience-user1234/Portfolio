@@ -1,0 +1,101 @@
+﻿Nom,Annee_Debut,Pere,Mere,Nb_Enfants,Enfants_Liste
+Clovis Ier,481,Childéric Ier,Basine de Thuringe,9,Thierry Ier Ingomer Clodomir Childebert Ier Clotaire Ier Clotilde
+Thierry Ier,511,Clovis Ier,"Evochilde, princesse franque",3,Thibert Ier Théodechilde
+Clodomir,511,Clovis Ier,Clotilde,3,Théodoald Gonthaire Clodoald
+Childebert Ier,511,Clovis Ier,Clotilde,2,Deux filles
+Clotaire Ier,511,Clovis Ier,Clotilde,9,Gonthier Childéric Caribert Gontran Sigebert Clodoswinthe Chilpéric Chramn Gondobald
+Thibert Ier,534,Thierry Ier,Inconnue,2,XThibaut Berthovère
+Thibaut,548,Thibert Ier,Deoteria,0,Inconnus
+Caribert Ier,561,Clotaire Ier,Ingonde,5,Berthe Bertheflède Clotilde Caribert de Hesbaye
+Chilpéric Ier,561,Clotaire Ier,Arégonde,9,Mérovée Basine Rigonde Clotaire II Thibert ou Théodebert Clovis Childesinde Samson Dagobert
+Gontran,561,Clotaire Ier,Ingonde,1,Gondebaud Un fils mort nourrisson Clotaire Clodomir Clotilde Clodeberge Childebert II
+Sigebert Ier,561,Clotaire Ier,Ingonde,3,Ingonde Childebert IIClodoswinthe
+Childebert II,575,Sigebert Ier,Brunehaut,3,Thibert IIThierry IITheodila
+Clotaire II,584,Chilpéric Ier,Frédégonde,3,Mérovée Énimie Dagobert Ier  Caribert II
+Thibert II,596,Childebert II,Faileube,1,Clotaire  Mérovée
+Thierry II,596,Childebert II,Faileube,3,Sigebert II  Childebert  Chramn  Mérovée
+Sigebert II,613,Thierry II,Inconnue,0,Inconnus
+Dagobert Ier,623,Clotaire II,Bertrude,6,Avec Ragnétrude Sigebert IIIAvec Nantilde Clovis II
+Caribert II,629,Clotaire II,Sichilde,1,Chilpéric
+Sigebert III,639,Dagobert Ier,Ragnétrude,3,Childebert III : adopté ?Dagobert IIBilichilde
+Clovis II,639,Dagobert Ier,Nantilde,3,Clotaire IIIChildéric IIThierry III
+Childebert III,656,Sigebert III Grimoald Ier,Inconnue,0,Inconnus
+Clotaire III,657,Clovis II,Bathilde,0,Inconnus
+Childéric II,662,Clovis II,Bathilde,0,Inconnus
+Thierry III,675,Clovis II,Bathilde,6,Clovis IV  Childebert IV  Clotaire IV  Peut-être Bertrade de Prüm
+Clovis III,675,Clotaire III,Inconnue,0,Inconnus
+Dagobert II,676,Sigebert III,Chimnechilde,2,Adèle  Irmine
+Clovis IV,691,Thierry III,Clotilde,0,Inconnus
+Childebert IV,695,Thierry III,Clotilde,1,Dagobert III
+Dagobert III,711,Childebert IV,Inconnue,1,Thierry IV
+Chilpéric II,715,Childéric II,Bilichilde,1,Childéric III
+Clotaire IV,717,Thierry III,Clotilde,0,Inconnus
+Thierry IV,721,Dagobert III,Inconnue,0,Inconnus
+Childéric III,743,Chilpéric II ?,Inconnue,1,Thierry
+Pépin,751,Charles Martel,Rotrude de Hesbaye,7,Charlemagne  Carloman Ier  Gisèle Pépin Berthe Rothaïde Adélaïde
+Charlemagne,768,Pépin le Bref,Bertrade de Laon,33,Avec Himiltrude :Alpaïs Pépin le Bossu Avec Hildegarde de Vintzgau :Charles le Jeune Adélaïde Rotrude Pépin d'Italie  Louis Ier le Pieux Lothaire Berthe Gisèle Hildegarde Avec Fastrade de Franconie :Théodrade Hiltrude Enfants illégitimes :Rothilde Chrotais Adeltrude Drogon de Metz Hugues l'AbbéThéodoric
+Carloman Ier,768,Pépin le Bref,Bertrade de Laon,0,Inconnus
+Louis Ier,814,Charlemagne,Hildegarde de Vintzgau,17,Avec Ermengarde de Hesbaye :Lothaire Ier Pépin Ier Rotrude Hildegarde Louis II Avec Judith de Bavière :Gisèle Charles II Alpaïs Arnulf de Sens
+Charles II,843,Louis Ier le Pieux,Judith de Bavière,18,Avec Ermentrude d'Orléans :Judith Louis II le Bègue Charles l'Enfant Carloman Ermentrude Hildegarde Rotrude Lothaire le Boiteux Godehilde Avec Richilde d'Ardennes :Rothilde
+Louis II,877,Charles II le Chauve,Ermentrude d'Orléans,10,avec Ansgarde de Bourgogne Louis III  Carloman II  Gisèle Hildegarde Ermentrude avec Adélaïde de Paris Charles III
+Louis III,879,Louis II,Ansgarde de Bourgogne,0,Inconnus
+Carloman II,879,Louis II,Ansgarde de Bourgogne,0,Inconnus
+Charles,885,Louis II le Germanique,Emma de Bavière,1,Bernard
+Eudes,888,Robert le Fort,Adélaïde de Tours,0,Inconnus
+Charles III,898,Louis II le Bègue,Adélaïde de Frioul,16,bâtards Arnulf Drogon Roricon Alpaïsavec Frédérune Gisèle Rothrude Hildegarde de France Frérone Ermentrude Adélaïdeavec Edwige de Wessex Louis IV d'Outremer
+Robert Ier,922,Robert le Fort,Adélaïde de Tours,5,Emma Hugues le Grand Adèle de France
+Raoul,923,Richard de Bourgogne,Adélaïde de Bourgogne,1,Louis
+Louis IV,936,Charles III,Edwige de Wessex,7,"Lothaire    Mathilde   Charles ou Carloman,   Louis   une fille   Charles   Henri"
+Lothaire,954,Louis IV,Gerberge de Saxe,4,Louis V    Eudes   Arnoul de France
+Louis V,986,Lothaire,Emma,0,Aucun
+Hugues,987,Hugues le Grand,Hedwige de Saxe,4,Gisèle Edwige   Robert II    Adélaïde
+Robert II,996,Hugues Capet,Adélaïde d'Aquitaine,17,Avec Constance d'Arles  Gisèle de France  Alix de France  Hugues de France  Henri Ier   Adèle de France Robert de France Eudes  Constance
+Hugues,1017,Robert II le Pieux,Constance d'Arles,0,Inconnus
+Henri Ier,1031,Robert II le Pieux,Constance d'Arles,8,Philippe Ier Robert de France Emma de France Hugues de France
+Philippe Ier,1060,Henri Ier,Anne de Kiev,19,"Constance de France Louis VI Henri de France Charles de France Eudes de France
+
+Enfants nés de sa liaison avec Bertrade de Montfort Philippe de France Fleury de France Cécile de France Eustachie de France"
+Louis VI,1108,Philippe Ier,Berthe de Hollande,15,Philippe de France Louis VII Henri de France Hugues de France Robert de France Constance de France Pierre de France Philippe de France
+Philippe,1129,Louis VI le Gros,Adèle de Savoie,0,Inconnus
+Louis VII,1137,Louis VI le Gros,Adèle de Savoie,4,Philippe II Auguste Agnès de France
+Philippe II,1180,Louis VII le Jeune,Adèle de Champagne,19,Avec Isabelle de Hainaut Louis VIII Avec Agnès de Méranie Marie de France Jean-Tristan de France Philippe Hurepel de Clermont Avec la « Dame d'Arras »Pierre Charlot
+Louis VIII,1223,Philippe II Auguste,Isabelle de Hainaut,15,Philippe de France  Louis IX   Robert de France  Jean de France  Alphonse de France  Philippe-Dagobert de France  Isabelle  Charles de France
+Louis IX,1226,Louis VIII le Lion,Blanche de Castille,22,Blanche de France Isabelle de France Louis de France Philippe III Jean de France Jean Tristan de France Pierre d'Alençon Blanche de France Marguerite de France Robert de Clermont Agnès de France
+Philippe III,1270,Louis IX,Marguerite de Provence,18,Avec Isabelle d'Aragon Louis de France Philippe IV Robert de France Charles de Valois Avec Marie de Brabant Louis d'Évreux Marguerite de France Blanche de France
+Philippe IV,1285,Philippe III le Hardi,Isabelle d'Aragon,7,Louis X  Philippe V  Charles IV   Isabelle de France Robert de France
+Louis X,1314,Philippe IV,Jeanne Ire,2,Jean Ier
+Jean Ier,1316,Louis X,Clémence de Hongrie,0,Inconnus
+Philippe V,1316,Philippe IV le Bel,Jeanne Ire de Navarre,10,Jeanne de France Marguerite de France Isabelle de France Blanche de France Philippe de France
+Charles IV,1322,Philippe IV le Bel,Jeanne Ire de Navarre,22,Avec Blanche de Bourgogne Philippe de France Jeanne de France Avec Marie de Luxembourg Marie de France Louis de France Avec Jeanne d'Évreux Jeanne de France Marie de France Blanche de France
+Philippe VI,1328,Charles de Valois,Marguerite d'Anjou,2,Jeanne de France
+Jean II,1350,Philippe VI de Valois,Jeanne de Bourgogne,33,Avec Bonne de Luxembourg Blanche de France Charles V Catherine de France Louis Ier d'Anjou Jean Ier de Berry Philippe II de Bourgogne Jeanne de France Marie de France Agnès de France Marguerite de France Isabelle de France Avec Jeanne d'Auvergne Blanche de France Catherine de France
+Charles V,1364,Jean II,Bonne de Luxembourg,16,Jeanne de France Bonne de France Jeanne de France Charles VI Marie de France Louis Ier d'Orléans Isabelle de France Catherine de France
+Charles VI,1380,Charles V,Jeanne de Bourbon,19,Charles de France Isabelle de France Jeanne de France Charles de France Marie de France Michelle de France Louis de Guyenne Jean de France Catherine de France Charles VII
+Charles VII,1422,Charles VI,Isabeau de Bavière,17,Louis XI Radegonde de France Catherine de France Yolande de France Jeanne de France Marie de France Marie de France Madeleine de France Charles de France
+Louis XI,1461,Charles VII,Marie d'Anjou,7,Anne de France Jeanne de France François de France Charles VIII
+Charles VIII,1483,Louis XI,Charlotte de Savoie,12,Charles-Orland de France François de France Enfant mort-né Charles de France François de France Anne de France
+Louis XII,1498,"Charles de Valois, duc d'Orléans",Marie de Clèves,4,Claude de France  Renée de France
+François Ier,1515,"Charles d'Angoulême,comte d'Angoulême",Louise de Savoie,18,"Louise de France Charlotte de France François de France,duc de Bretagne  Henri II   Madeleine de France  Charles de France,Comte d’Angoulême  Marguerite de France  enfant illégitime :  Nicolas d'Estouteville"
+Henri II,1547,François Ier,Claude de France,18,Diane de France François II   Élisabeth de France  Claude de France  Louis de France  Charles IX   Henri III  Marguerite de France  François de France  Victoire de France Jeanne de France
+François II,1559,Henri II,Catherine de Médicis,0,Aucun
+Charles IX,1560,Henri II,Catherine de Medicis,5,Marie-Élisabeth de France Illégitime :Charles d'Angoulême
+Henri III,1574,Henri II,Catherine de Médicis,0,Inconnus
+Henri IV,1589,"Antoine de Bourbon, duc de Vendôme",Jeanne III de Navarre,26,"Louis XIII  Élisabeth de France Christine de France Monsieur d'Orléans  Gaston de France Henriette-Marie de France
+ César de Vendôme Catherine-Henriette de Bourbon Mademoiselle de Vendôme Alexandre de Vendôme  Henri de Bourbon Antoine de Bourbon Jeanne-Baptiste de Bourbon"
+Louis XIII,1610,Henri IV,Marie de Médicis,3,Louis XIV   Philippe d'Orléans
+Louis XIV,1643,Louis XIII,Anne d'Autriche,39,"Louis de France Anne-Élisabeth de France Marie-Anne de France Marie-Thérèse de France Philippe Charles de France Louis-François de France
+ Marie-Anne de Bourbon Louis de Bourbon
+
+Louis-Auguste de Bourbon Louis-César de Bourbon Louise-Françoise de Bourbon  Louise Marie-Anne de Bourbon Françoise-Marie de Bourbon Louis-Alexandre de Bourbon"
+Louis XV,1715,"Louis de France, dauphin de France",Marie-Adélaïde de Savoie,26,"Louise-Élisabeth de France Henriette de France Marie-Louise de France Louis de France Philippe de France Adélaïde de France Victoire de France Sophie de France Thérèse de France Louise de France
+
+Charles de Vintimille Louis-Aimé de Bourbon"
+Louis XVI,1774,"Louis de France,dauphin de France",Marie-Josèphe de Saxe,13,"Marie-Thérèse de France Louis-Joseph de France, dauphin de France Louis-Charles de France, dauphin de France puis prince royal Sophie de France"
+Napoléon Ier,1804,Charles Bonaparte,Maria Letizia Ramolino,12,"Prince Napoléon, prince impérial, roi de Rome Charles Léon Alexandre Walewski Eugène de Beauharnais  Hortense de Beauharnais  Stéphanie de Beauharnais"
+1815,1815,Inconnu,Inconnue,0,Inconnus
+Napoléon II,1815,Napoléon Ier,Marie-Louise d'Autriche,0,Inconnus
+Louis XVIII,1814,Louis de France,Marie-Josèphe de Saxe,0,aucun
+1824,1815,Inconnu,Inconnue,0,Inconnus
+Charles X,1824,"Louis de France, dauphin de France",Marie-Josèphe de Saxe,10,"Louis de France Mademoiselle d'Artois Charles-Ferdinand d'Artois, duc de Berry Mademoiselle d'Angoulême"
+Louis-Philippe Ier,1830,"Louis-Philippe d’Orléans, duc d'Orléans",Marie-Adélaïde de Bourbon,32,"Ferdinand-Philippe d'Orléans, duc d'Orléans Louise d'Orléans, reine des Belges Marie d'Orléans, duchesse de Wurtemberg Louis d'Orléans, duc de Nemours Françoise d'Orléans, Mademoiselle de Montpensier Clémentine d'Orléans, duchesse en Saxe François d'Orléans, prince de Joinville Charles d'Orléans, duc de Penthièvre Henri d'Orléans, duc d'Aumale Antoine d'Orléans, duc de Montpensier"
+Napoléon III,1852,Louis Bonaparte,Hortense de Beauharnais,3,Louis-Napoléon Bonaparte
