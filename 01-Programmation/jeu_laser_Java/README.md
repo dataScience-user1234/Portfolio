@@ -22,7 +22,8 @@ Les points clés du développement technique :
 * **`circuit/`** : Dossier principal contenant les sources et les ressources du projet.
 * **`javadoc/`** : Documentation technique générée automatiquement détaillant l'ensemble des classes et des méthodes du code source.
 * **`CircuitLaser.jar`** : Version exécutable du jeu permettant de lancer l'application directement.
-* **`Rapport_libgdx.pdf`** : Rapport d'étude complet présentant les choix technologiques, l'architecture technique et les solutions apportées aux problématiques de développement.
+* **`Rapport.pdf`** : Rapport d'étude complet présentant les choix technologiques, l'architecture technique et les solutions apportées aux problématiques de développement.
+* **`image_du_jeu`** : Screenshot du jeu
 
 <div align="center">
   <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
