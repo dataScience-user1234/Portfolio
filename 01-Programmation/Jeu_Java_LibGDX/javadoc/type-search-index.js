@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"io.github.some_example_name","l":"Laser"},{"p":"io.github.some_example_name.lwjgl3","l":"Lwjgl3Launcher"},{"p":"io.github.some_example_name","l":"Main"},{"p":"io.github.some_example_name","l":"Plateau"},{"p":"io.github.some_example_name.lwjgl3","l":"StartupHelper"}];updateSearchResults();
