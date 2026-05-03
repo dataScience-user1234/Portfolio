@@ -8,7 +8,7 @@ Ce projet a été réalisé dans le cadre du module de Programmation Orientée O
 
 **Description du Projet**
 
-**Circuit Laser** est un jeu de réflexion et d'adresse. Le joueur doit guider un faisceau laser à travers un labyrinthe complexe, du point de départ à la sortie, en évitant tout contact avec les murs ou les obstacles.
+**Circuit Laser** est un jeu de réflexion et d'adresse. Le joueur doit guider un faisceau laser à travers un labyrinthe, du point de départ à la sortie, en évitant tout contact avec les murs ou les obstacles.
 
 Les points clés du développement technique :
 
