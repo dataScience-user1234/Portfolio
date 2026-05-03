@@ -1,0 +1,18 @@
+Eléments à aborder dans le rapport final qui sera noté :
+
+=> MCD des 8 tables du SIO
+=> Analyse des données du SIO
+
+=> Imaginer une réponse à la demande de la gestion des ventes du service finances
+=> Imaginer une réponse à la demande de la gestion des livraisons du service logistique
+
+=> Conception des FAITS et des DIMENSIONS
+=> Création des tables de FAITS (2) et de DIMENSIONS (n) dans le SID (CREATE TABLE)
+
+=> Extraction des données du SIO pour remplissage des données dans le SID (ETL)
+
+=> Création des requêtes de reporting (ETL) du SID vers Excel
+
+=> Commentaire dans le rapport sur l'utilité de chaque requête d'aide à la décision :
+   Pour quelle décision de gestion est-elle utile ?
+
