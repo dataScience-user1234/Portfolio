@@ -1,1 +1,12 @@
+# Fichiers système Mac
 .DS_Store
+
+# Environnements virtuels Python (partout dans le projet)
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# Si tu as du Java (LibGDX), tu peux aussi ignorer ces dossiers techniques
+bin/
+build/
+.gradle/
