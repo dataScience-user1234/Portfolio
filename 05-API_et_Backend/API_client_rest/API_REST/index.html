@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Guerre des chats</title>
+    <style>
+        
+        /*base de la page */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #2c3e50; padding: 20px; max-width: 800px; margin: auto; }
+        h1 { text-align: center; color: #8e44ad; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); } 
+        
+        /*le style generale des boites */
+        .section { padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 25px; border: 2px solid transparent; }
+        .cache { display: none; }
+        
+        /*pour rendre ca coloré */
+        #zone-login { background-color: #fff4e6; border-color: #ff9f43; } /* Orange pastel */
+        #zone-privee { background-color: #eafaf1; border-color: #2ecc71; } /* Vert pastel */
+        #zone-publique { background-color: #ebf5fb; border-color: #3498db; } /* Bleu pastel */
+
+        /*les champs de texte */
+        input { padding: 10px; margin: 5px; border-radius: 6px; border: 1px solid #bdc3c7; outline: none; }
+        input:focus { border-color: #8e44ad; box-shadow: 0 0 5px rgba(142, 68, 173, 0.3); }
+
+        /*les boutons colorés */
+        button { padding: 10px 15px; background-color: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.2s ease-in-out; }
+        button:hover { background-color: #2980b9; transform: scale(1.05); }
+        
+        .btn-rouge { background-color: #e74c3c; }
+        .btn-rouge:hover { background-color: #c0392b; }
+        
+        .btn-violet { background-color: #9b59b6; margin-bottom: 15px;}
+        .btn-violet:hover { background-color: #8e44ad; }
+        
+        /*les listes pour les chats */
+        ul { padding: 0; }
+        ul li { background: white; margin: 8px 0; padding: 12px; border-radius: 6px; border-left: 6px solid #f1c40f; list-style-type: none; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <h1>🐾 La guerre des chats 🐾</h1>
+
+    <div id="zone-login" class="section">
+        <h2 style="color: #d35400;">Connexion</h2>
+        <p>Connecte-toi pour gérer ton armée </p>
+        <input type="text" id="username" placeholder="Pseudo">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="seConnecter()">Se connecter</button>
+        <p id="msg-login" style="color: red; font-weight: bold;"></p>
+    </div>
+
+    <div id="zone-privee" class="section cache">
+        <h2 id="titre-bienvenue" style="color: #27ae60;">Mon quartier général</h2>
+        <button class="btn-rouge" onclick="seDeconnecter()">Se déconnecter</button>
+        <hr style="border-top: 1px dashed #2ecc71; margin: 15px 0;">
+
+        <h3>1. Gérer mon armée</h3>
+        <input type="text" id="nom-armee" placeholder="Nom de l'armée">
+        <input type="text" id="desc-armee" placeholder="Description">
+        <button onclick="sauvegarderArmee()">Mettre à jour l'armée</button>
+
+        <h3 style="margin-top: 20px;">2. Recruter un soldat</h3>
+        <input type="text" id="nom-chat" placeholder="Nom du chat">
+        <input type="text" id="race-chat" placeholder="Race">
+        <input type="number" id="age-chat" placeholder="Âge">
+        <button onclick="recruterChat()">Recruter !</button>
+        
+        <p id="msg-action" style="font-weight: bold; margin-top: 10px;"></p>
+    </div>
+
+    <div id="zone-publique" class="section">
+        <h2 style="color: #2980b9;">Données du serveur</h2>
+        <button class="btn-violet" onclick="recupererDonneesPubliques()">Rafraîchir les données</button>
+        
+        <h3>Toutes les armées</h3>
+        <ul id="liste-armees"></ul>
+
+        <h3>Tous les chats 🐱</h3>
+        <ul id="liste-chats"></ul>
+    </div>
+
+    <script>
+        // --- Variables globales ---
+        const baseUrl = "http://127.0.0.1:8000";
+        let tokenGlobal = ""; // Cette variable stockera le jeton de sécurité
+
+        // --- Mise en cache des éléments du DOM ---
+        // On cible tous les éléments HTML au chargement de la page pour optimiser les performances
+        const inputUsername = document.getElementById('username');
+        const inputPassword = document.getElementById('password');
+        const msgLogin = document.getElementById('msg-login');
+        
+        const zoneLogin = document.getElementById('zone-login');
+        const zonePrivee = document.getElementById('zone-privee');
+        const titreBienvenue = document.getElementById('titre-bienvenue');
+        
+        const inputNomArmee = document.getElementById('nom-armee');
+        const inputDescArmee = document.getElementById('desc-armee');
+        
+        const inputNomChat = document.getElementById('nom-chat');
+        const inputRaceChat = document.getElementById('race-chat');
+        const inputAgeChat = document.getElementById('age-chat');
+        const msgAction = document.getElementById('msg-action');
+        
+        const ulArmees = document.getElementById('liste-armees');
+        const ulChats = document.getElementById('liste-chats');
+
+        // --- Fonctions d'authentification ---
+
+        async function seConnecter() {
+            // Utilisation des variables mises en cache
+            const user = inputUsername.value;
+            const mdp = inputPassword.value;
+            
+            // On prépare les données sous le format attendu par FastAPI
+            const formData = new URLSearchParams();
+            formData.append("username", user);
+            formData.append("password", mdp);
+
+            try {
+                const reponse = await fetch(`${baseUrl}/token`, {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (!reponse.ok) throw new Error("Identifiants incorrects !");
+                
+                const data = await reponse.json();
+                tokenGlobal = data.access_token; // On sauvegarde le JWT reçu
+                
+                // On met à jour l'interface en cachant le login et en affichant la zone privée
+                zoneLogin.classList.add('cache');
+                zonePrivee.classList.remove('cache');
+                titreBienvenue.innerText = `Quartier Général du Commandant ${user}`;
+                msgLogin.innerText = "";
+                
+                recupererDonneesPubliques();
+            } catch (err) {
+                msgLogin.innerText = err.message;
+            }
+        }
+
+        function seDeconnecter() {
+            tokenGlobal = ""; // On vide le token pour des raisons de sécurité
+            
+            // On réaffiche le formulaire de connexion
+            zoneLogin.classList.remove('cache');
+            zonePrivee.classList.add('cache');
+            
+            // On vide les champs de texte
+            inputUsername.value = "";
+            inputPassword.value = "";
+            msgAction.innerText = "";
+        }
+
+        // --- Fonctions liées à la base de données (Actions privées) ---
+
+        async function sauvegarderArmee() {
+            const nom = inputNomArmee.value;
+            const desc = inputDescArmee.value;
+            
+            try {
+                const reponse = await fetch(`${baseUrl}/mon-armee/?nom=${nom}&description=${desc}`, {
+                    method: "POST",
+                    // On injecte le token dans le header pour prouver notre identité au serveur
+                    headers: { "Authorization": `Bearer ${tokenGlobal}` }
+                });
+                if (reponse.ok) {
+                    msgAction.innerText = "Armée mise à jour avec succès !";
+                    msgAction.style.color = "green";
+                    recupererDonneesPubliques(); // Rafraîchissement direct de la liste en bas
+                }
+            } catch (err) { console.error("Erreur armée :", err); }
+        }
+
+        async function recruterChat() {
+            const nom = inputNomChat.value;
+            const race = inputRaceChat.value;
+            const age = inputAgeChat.value;
+            
+            try {
+                const reponse = await fetch(`${baseUrl}/chats/recruter?name=${nom}&race=${race}&age=${age}`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${tokenGlobal}` }
+                });
+                
+                if (!reponse.ok) throw new Error("Erreur: As-tu créé ton armée d'abord ?");
+                
+                msgAction.innerText = `${nom} a rejoint les rangs !`;
+                msgAction.style.color = "green";
+                recupererDonneesPubliques();
+            } catch (err) {
+                msgAction.innerText = err.message;
+                msgAction.style.color = "red";
+            }
+        }
+
+        // --- Fonction publique (Visible par tous) ---
+
+        async function recupererDonneesPubliques() {
+            try {
+                // 1. Récupération et affichage des armées
+                const repArmees = await fetch(`${baseUrl}/armees/`);
+                const armees = await repArmees.json();
+                
+                ulArmees.innerHTML = ""; // On vide le conteneur avant de le re-remplir
+                armees.forEach(a => {
+                    ulArmees.innerHTML += `<li><b>${a.nom}</b> : ${a.description} (Appartient au User ID: ${a.user_id})</li>`;
+                });
+
+                // 2. Récupération et affichage des chats
+                const repChats = await fetch(`${baseUrl}/chats/`);
+                const chats = await repChats.json();
+                
+                ulChats.innerHTML = "";
+                chats.forEach(c => {
+                    let msgArmee = c.armee_id ? `Fait partie de l'armée ID: ${c.armee_id}` : "Sans armée";
+                    ulChats.innerHTML += `<li><b>${c.name}</b> (${c.race}, ${c.age} ans) - <i>${msgArmee}</i></li>`;
+                });
+            } catch (err) { console.error("Erreur serveur :", err); }
+        }
+
+        // Appel initial pour charger les données dès l'ouverture de l'application
+        recupererDonneesPubliques();
+    </script>
+</body>
+</html>
