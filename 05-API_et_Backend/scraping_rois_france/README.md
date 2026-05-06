@@ -10,6 +10,7 @@ Pour pouvoir tester le tableau de bord directement et sans conflit de versions, 
    python3 -m venv .venv
 
 2. L'activer :
+   - Windows : .\.venv\Scripts\activate
    - Mac/Linux : source .venv/bin/activate
 
 3. Installer les dépendances :
