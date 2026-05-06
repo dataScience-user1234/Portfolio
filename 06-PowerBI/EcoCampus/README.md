@@ -27,4 +27,4 @@ L'objectif principal est de comprendre comment les étudiants et le personnel se
 
 **Aperçu**
 
-![introduction](introduction.png)
+![introduction](dashboard/introduction.png)
