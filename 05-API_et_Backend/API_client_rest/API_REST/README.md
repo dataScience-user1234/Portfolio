@@ -4,7 +4,6 @@
   <img height="50" width="100%" src="https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/divider.gif">
 </div>
 
-## Description
 Ce projet est une architecture client-serveur complète comprenant :
 - Une **API RESTful** codée en Python avec FastAPI.
 - Une **base de données relationnelle** gérée via SQLModel et SQLite (`database.db`).
