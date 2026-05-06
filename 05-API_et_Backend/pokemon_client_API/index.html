@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke-Client</title>
+    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --poke-red: #FF0000;
+            --poke-blue: #3B4CCA;
+            --poke-yellow: #FFCC00;
+            --bg-light: #f0f4f8;
+            --card-bg: #ffffff;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-light); margin: 0; padding: 0; color: #333; }
+        
+        header { 
+            background-color: var(--poke-red); 
+            text-align: center; 
+            padding: 5px 0; 
+            border-bottom: 8px solid var(--poke-blue); 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+        }
+        
+        .main-logo {
+            max-width: 220px; 
+            height: auto;
+            margin: -55px 0; 
+        }
+
+        nav { display: flex; justify-content: center; background-color: var(--poke-blue); padding: 10px; }
+        nav button { background-color: var(--poke-yellow); color: var(--poke-blue); border: none; padding: 10px 20px; margin: 0 10px; font-weight: bold; font-size: 1.1em; cursor: pointer; border-radius: 20px; transition: transform 0.2s, background-color 0.2s; }
+        nav button:hover { transform: scale(1.05); background-color: #ffe066; }
+        main { padding: 20px; max-width: 1000px; margin: auto; }
+        
+        .section-container { display: none; background: var(--card-bg); padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 3px solid var(--poke-yellow); }
+        .active { display: block; }
+        
+        .search-box { text-align: center; margin-bottom: 20px; }
+        .search-box input { padding: 10px; width: 200px; border-radius: 5px; border: 2px solid var(--poke-blue); }
+        .search-box button { padding: 10px 15px; background: var(--poke-blue); color: white; border: none; border-radius: 5px; cursor: pointer; }
+        
+        .result-card { text-align: center; background: #fff9e6; padding: 20px; border-radius: 10px; border: 2px dashed var(--poke-red); }
+        .result-card img { max-width: 200px; }
+        
+        .grid-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+        .grid-item { background: var(--poke-blue); color: white; padding: 15px; text-align: center; border-radius: 10px; cursor: pointer; text-transform: capitalize; font-weight: bold; }
+        .grid-item:hover { background: var(--poke-red); }
+        
+        .dropdown-select {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            border: 2px solid var(--poke-blue);
+            font-size: 1.1em;
+            margin: 10px auto 20px auto;
+            display: block;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #berry-details { margin-top: 20px; padding: 15px; background: #e6f2ff; border-left: 5px solid var(--poke-blue); display: none; text-align: center;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="pokemon.png" alt="Pokémon Logo" class="main-logo">
+    </header>
+
+    <nav>
+        <button onclick="showSection('search')">Recherche</button>
+        <button onclick="showSection('list-poke')">Liste Pokémons</button>
+        <button onclick="showSection('list-berries')">Baies</button>
+    </nav>
+
+    <main>
+        <div id="search" class="section-container active">
+            <h2 style="color: var(--poke-red); text-align: center;">Chercher un Pokémon</h2>
+            <div class="search-box">
+                <input type="text" id="pokeId" placeholder="Entrez le numéro ou nom">
+                <button onclick="searchPokemon()">Chercher</button>
+            </div>
+            <div id="poke-result" class="result-card" style="display: none;">
+                <h3 id="poke-name" style="text-transform: capitalize; color: var(--poke-blue); font-size: 2em;"></h3>
+                <img id="poke-img" src="" alt="Image Pokemon">
+                
+                <p><strong>Taille :</strong> <span id="poke-height"></span></p>
+                <p><strong>Poids :</strong> <span id="poke-weight"></span></p>
+                
+                <p><strong>Description :</strong> <span id="poke-desc"></span></p>
+                <div style="margin-top: 15px;">
+                    <strong>Cri du Pokémon :</strong><br><br>
+                    <audio id="poke-cry" controls></audio>
+                </div>
+            </div>
+            <p id="search-error" style="color: red; text-align: center;"></p>
+        </div>
+
+        <div id="list-poke" class="section-container">
+            <h2 style="color: var(--poke-blue); text-align: center;">Pokémons par Génération</h2>
+            <select id="gen-select" class="dropdown-select">
+            </select>
+            <div id="pokemon-grid" class="grid-list" style="margin-top: 20px;"></div>
+        </div>
+
+        <div id="list-berries" class="section-container">
+            <h2 style="color: var(--poke-red); text-align: center;">Liste des Baies</h2>
+            <select id="berry-select" class="dropdown-select">
+            </select>
+            
+            <div id="berry-details">
+                <h3 id="berry-name" style="text-transform: capitalize; color: var(--poke-blue);"></h3>
+                <img id="berry-img" src="" alt="Image Baie" style="max-width: 100px; display: none; margin: 0 auto;">
+                <p><strong>Fermeté :</strong> <span id="berry-firmness"></span></p>
+                <p><strong>Description :</strong> <span id="berry-desc"></span></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
